@@ -1,0 +1,56 @@
+{
+    "name": "find-emails-in-string-cli",
+    "description": "Find emails in plain text file",
+    "version": "1.0.0",
+    "license": "MIT",
+    "author": {
+        "name": "Piotr Kowalski",
+        "email": "piecioshka@gmail.com",
+        "url": "https://piecioshka.pl/"
+    },
+    "scripts": {
+        "clear": "rm -rf dist/ coverage/",
+        "clear:all": "rm -rf node_modules/ && npm run clear",
+        "test": "npm run test:unit",
+        "test:unit": "jasmine JASMINE_CONFIG_PATH=test/unit/jasmine.json",
+        "coverage": "istanbul cover jasmine JASMINE_CONFIG_PATH=test/unit/jasmine.json",
+        "count": "find . -name '*.js' -not -path './node_modules/*' | xargs wc -l | sort -r",
+        "lint": "eslint ./ ; exit 0"
+    },
+    "dependencies": {
+        "find-emails-in-string": "^1.0.1"
+    },
+    "devDependencies": {
+        "eslint": "^4.13.1",
+        "eslint-config-piecioshka": "^2.0.0",
+        "istanbul": "^0.4.5",
+        "jasmine": "^2.8.0"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/piecioshka/find-emails-in-string-cli.git"
+    },
+    "bugs": {
+        "url": "https://github.com/piecioshka/find-emails-in-string-cli/issues"
+    },
+    "files": [
+        ".bin",
+        "src",
+        "index.js",
+        "package.json",
+        "README.md"
+    ],
+    "keywords": [
+        "cli",
+        "find",
+        "emails",
+        "tool",
+        "display",
+        "email",
+        "list"
+    ],
+    "main": "./index.js",
+    "bin": {
+        "find-emails": "./.bin/cli.js"
+    }
+}

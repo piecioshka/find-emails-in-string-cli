@@ -13,18 +13,20 @@
         "clear:all": "rm -rf node_modules/ && npm run clear",
         "test": "npm run test:unit",
         "test:unit": "jasmine JASMINE_CONFIG_PATH=test/unit/jasmine.json",
-        "coverage": "istanbul cover jasmine JASMINE_CONFIG_PATH=test/unit/jasmine.json",
+        "coverage": "nyc npm run test && nyc report --reporter=html",
+        "report-coverage": "nyc report --reporter=text-lcov > coverage.lcov && codecov",
         "count": "find . -name '*.js' -not -path './node_modules/*' | xargs wc -l | sort -r",
-        "lint": "eslint ./ ; exit 0"
+        "lint": "eslint ."
     },
     "dependencies": {
         "find-emails-in-string": "^1.0.1"
     },
     "devDependencies": {
+        "codecov": "^3.3.0",
         "eslint": "^5.16.0",
         "eslint-config-piecioshka": "^2.0.1",
-        "istanbul": "^0.4.5",
-        "jasmine": "^3.4.0"
+        "jasmine": "^3.4.0",
+        "nyc": "^14.0.0"
     },
     "repository": {
         "type": "git",

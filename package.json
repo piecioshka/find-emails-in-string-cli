@@ -12,8 +12,7 @@
         "clear": "rm -rf coverage/ .nyc_output/ coverage.lcov",
         "clear:all": "rm -rf node_modules/ && npm run clear",
         "test": "jasmine test/**/*.js",
-        "coverage": "nyc report --reporter=text-lcov | coveralls -v",
-        "report-coverage": "nyc report --reporter=text-lcov > coverage.lcov && codecov",
+        "coverage": "nyc npm run test && nyc report --reporter=text-lcov | coveralls -v",
         "count": "find . -name '*.js' -not -path './node_modules/*' | xargs wc -l | sort -r",
         "lint": "eslint ."
     },

@@ -4,7 +4,6 @@
 [![downloads count](https://img.shields.io/npm/dt/find-emails-in-string-cli.svg)](https://www.npmjs.com/~piecioshka)
 [![travis](https://img.shields.io/travis/piecioshka/find-emails-in-string-cli.svg)](https://travis-ci.org/piecioshka/find-emails-in-string-cli)
 [![coveralls](https://coveralls.io/repos/github/piecioshka/find-emails-in-string-cli/badge.svg?branch=master)](https://coveralls.io/github/piecioshka/find-emails-in-string-cli?branch=master)
-[![codecov](https://codecov.io/gh/piecioshka/find-emails-in-string-cli/branch/master/graph/badge.svg)](https://codecov.io/gh/piecioshka/find-emails-in-string-cli)
 
 :hammer: Find emails in plain text file
 

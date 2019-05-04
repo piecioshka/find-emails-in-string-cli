@@ -23,15 +23,11 @@ admin@example.org, webmaster@example.org, root@example.org
 
 ## Unit tests
 
-Use Jasmine to setup unit test:
-
 ```bash
 npm test
 ```
 
 ## Code coverage
-
-Use Istanbul to get code coverage ratio:
 
 ```bash
 npm run coverage

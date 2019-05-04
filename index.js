@@ -1,1 +1,1 @@
-module.exports = require('./.bin/cli');
+module.exports = require('./src/index');

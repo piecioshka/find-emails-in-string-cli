@@ -13,7 +13,6 @@
         "clear:all": "rm -rf node_modules/ && npm run clear",
         "test": "jasmine test/**/*.js",
         "coverage": "nyc npm run test && nyc report --reporter=html",
-        "coveralls": "nyc npm run test && nyc report --reporter=text-lcov | coveralls -v",
         "lint": "eslint ."
     },
     "dependencies": {
@@ -22,7 +21,6 @@
     "devDependencies": {
         "@types/node": "^17.0.5",
         "babel-eslint": "^10.1.0",
-        "coveralls": "^3.1.1",
         "eslint": "^8.5.0",
         "eslint-config-piecioshka": "^2.0.4",
         "jasmine": "^3.10.0",

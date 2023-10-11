@@ -1,20 +1,19 @@
 #!/usr/bin/env node
 
-'use strict';
+"use strict";
 
-const args = process.argv;
-const THIRD_ARGUMENT_INDEX = 2;
-const filename = args[THIRD_ARGUMENT_INDEX];
-
-if (!filename) {
-    throw new Error('Put filename of file in emails');
-}
-
-const finder = require('../src');
+const finder = require("../src");
+const filename = process.argv[2];
 
 (async () => {
+    if (!filename) {
+        console.log("Usage: find-emails path/to/file.md");
+        return;
+    }
 
     const emails = await finder(filename);
-    console.log(emails);
 
+    if (emails) {
+        console.log(emails);
+    }
 })();

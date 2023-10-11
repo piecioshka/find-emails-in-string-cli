@@ -20,18 +20,6 @@ find-emails /path/to/text-file.txt
 admin@example.org, webmaster@example.org, root@example.org
 ```
 
-## Unit tests
-
-```bash
-npm test
-```
-
-## Code coverage
-
-```bash
-npm run coverage
-```
-
 ## Credits
 
 Thanks to [alexemrie](https://github.com/alexemrie) for create package

@@ -28,7 +28,7 @@
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/piecioshka/find-emails-in-string-cli.git"
+        "url": "git+https://github.com/piecioshka/find-emails-in-string-cli.git"
     },
     "bugs": {
         "url": "https://github.com/piecioshka/find-emails-in-string-cli/issues"
@@ -54,6 +54,6 @@
     ],
     "main": "./index.js",
     "bin": {
-        "find-emails": "./bin/cli.js"
+        "find-emails": "bin/cli.js"
     }
 }

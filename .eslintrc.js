@@ -1,7 +1,11 @@
 module.exports = {
-    extends: 'piecioshka',
+    extends: "piecioshka",
 
-    parser: 'babel-eslint',
+    parser: "@babel/eslint-parser",
+
+    parserOptions: {
+        requireConfigFile: false,
+    },
 
     // https://eslint.org/docs/user-guide/configuring#specifying-environments
     env: {
@@ -11,14 +15,16 @@ module.exports = {
         commonjs: true,
         // amd: true,
         // jquery: true,
-        jasmine: true
+        jasmine: true,
     },
 
     // https://eslint.org/docs/rules/
     rules: {
-        "no-console": ["off"]
+        "no-console": ["off"],
+        quotes: ["error", "double"],
+        "arrow-parens": ["error", "always"],
     },
 
     // List of global variables.
-    globals: {}
+    globals: {},
 };

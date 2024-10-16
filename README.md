@@ -6,7 +6,7 @@
 [![license](https://img.shields.io/npm/l/find-emails-in-string-cli.svg)](https://piecioshka.mit-license.org)
 [![github-ci](https://github.com/piecioshka/find-emails-in-string-cli/actions/workflows/testing.yml/badge.svg)](https://github.com/piecioshka/find-emails-in-string-cli/actions/workflows/testing.yml)
 
-:hammer: CLI to find emails in plain text file
+🔨 CLI to find emails in plain text file
 
 ## Install
 

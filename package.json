@@ -1,7 +1,7 @@
 {
     "name": "find-emails-in-string-cli",
     "description": "🔨 Find emails in plain text file",
-    "version": "1.1.6",
+    "version": "1.1.7",
     "license": "MIT",
     "author": {
         "name": "Piotr Kowalski",

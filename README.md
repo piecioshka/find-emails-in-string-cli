@@ -1,5 +1,6 @@
 # find-emails-in-string-cli
 
+[![cli-available](https://badgen.net/static/cli/available/?icon=terminal)](https://runkit.com/npm/find-emails-in-string-cli)
 [![node version](https://img.shields.io/node/v/find-emails-in-string-cli.svg)](https://www.npmjs.com/package/find-emails-in-string-cli)
 [![npm version](https://badge.fury.io/js/find-emails-in-string-cli.svg)](https://badge.fury.io/js/find-emails-in-string-cli)
 [![downloads count](https://img.shields.io/npm/dt/find-emails-in-string-cli.svg)](https://www.npmjs.com/package/find-emails-in-string-cli)
@@ -9,13 +10,13 @@
 
 🔨 CLI to find emails in plain text file
 
-## Install
+## CLI
+
+Installation:
 
 ```bash
 npm install -g find-emails-in-string-cli
 ```
-
-## CLI
 
 ```bash
 find-emails-in-string /path/to/text-file.txt

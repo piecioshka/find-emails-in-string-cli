@@ -28,7 +28,7 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/piecioshka/find-emails-in-string-cli.git"
+        "url": "git+ssh://git@github.com/piecioshka/find-emails-in-string-cli.git"
     },
     "engines": {
         "node": ">=12"

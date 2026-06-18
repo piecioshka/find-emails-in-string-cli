@@ -10,6 +10,8 @@
 
 🔨 CLI to find emails in plain text file
 
+![](demo/find-emails-in-string.gif)
+
 ## CLI
 
 Installation:

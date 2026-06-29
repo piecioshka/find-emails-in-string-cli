@@ -9,22 +9,22 @@
         "url": "https://piecioshka.pl/"
     },
     "scripts": {
-        "clear": "rm -rf coverage/ .nyc_output/ coverage.lcov",
+        "clear": "rm -rf coverage/",
         "clear:all": "rm -rf node_modules/ && npm run clear",
-        "test": "jasmine test/**/*.js",
-        "coverage": "nyc npm run test && nyc report --reporter=html",
-        "lint": "eslint src/"
+        "check-ts": "tsc --noEmit",
+        "prebuild": "rm -rf dist/ types/",
+        "build": "tsc",
+        "test": "vitest run",
+        "coverage": "vitest run --coverage"
     },
     "dependencies": {
         "find-emails-in-string": "^1.0.1"
     },
     "devDependencies": {
-        "@babel/eslint-parser": "^7.25.8",
         "@types/node": "^22.7.5",
-        "eslint": "^8.57.1",
-        "eslint-config-piecioshka": "^2.3.1",
-        "jasmine": "^5.4.0",
-        "nyc": "^17.1.0"
+        "@vitest/coverage-v8": "^2.1.5",
+        "typescript": "^5.6.3",
+        "vitest": "^2.1.5"
     },
     "repository": {
         "type": "git",
@@ -35,11 +35,13 @@
     },
     "files": [
         "bin",
-        "src",
+        "dist",
+        "types",
         "index.js",
         "package.json",
         "README.md",
-        "LICENSE"
+        "LICENSE",
+        "!**/*.spec.*"
     ],
     "keywords": [
         "cli",
@@ -50,7 +52,8 @@
         "email",
         "list"
     ],
-    "main": "./index.js",
+    "main": "index.js",
+    "types": "types/index.d.ts",
     "bin": {
         "find-emails-in-string": "bin/cli.js"
     }

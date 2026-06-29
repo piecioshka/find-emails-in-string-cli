@@ -1,10 +1,13 @@
-const fs = require("fs");
-const util = require("util");
+"use strict";
 
-const findEmails = require("find-emails-in-string");
+import fs from "fs";
+import util from "util";
+
+import findEmails from "find-emails-in-string";
+
 const readFile = util.promisify(fs.readFile);
 
-module.exports = async (filename) => {
+const findEmailsInFile = async (filename: string): Promise<string> => {
     const content = await readFile(filename);
 
     const clearContent = content
@@ -16,3 +19,5 @@ module.exports = async (filename) => {
 
     return uniqueEmails.join(", ");
 };
+
+export = findEmailsInFile;

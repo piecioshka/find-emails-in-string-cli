@@ -2,7 +2,7 @@
 
 "use strict";
 
-const finder = require("../src");
+const finder = require("../dist/index");
 const filename = process.argv[2];
 
 (async () => {

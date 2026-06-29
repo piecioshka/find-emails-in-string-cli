@@ -1,1 +1,2 @@
-module.exports = require('./src/index');
+'use strict';
+module.exports = require('./dist/index');

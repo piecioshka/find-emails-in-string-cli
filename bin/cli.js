@@ -7,13 +7,19 @@ const filename = process.argv[2];
 
 (async () => {
     if (!filename) {
-        console.log("Usage: find-emails-in-string path/to/file.md");
+        console.error("Usage: find-emails-in-string path/to/file.md");
+        process.exitCode = 1;
         return;
     }
 
-    const emails = await finder(filename);
+    try {
+        const emails = await finder(filename);
 
-    if (emails) {
-        console.log(emails);
+        if (emails) {
+            console.log(emails);
+        }
+    } catch (error) {
+        console.error(`Error: ${error.message}`);
+        process.exitCode = 1;
     }
 })();

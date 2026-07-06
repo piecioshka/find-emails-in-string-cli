@@ -36,7 +36,9 @@
     },
     "files": [
         "bin",
+        "demo",
         "dist",
+        "src",
         "types",
         "index.js",
         "package.json",

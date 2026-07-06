@@ -21,17 +21,17 @@
         "find-emails-in-string": "^1.0.1"
     },
     "devDependencies": {
-        "@types/node": "^22.7.5",
-        "@vitest/coverage-v8": "^2.1.5",
-        "typescript": "^5.6.3",
-        "vitest": "^2.1.5"
+        "@types/node": "^26.1.0",
+        "@vitest/coverage-v8": "^4.1.10",
+        "typescript": "^6.0.3",
+        "vitest": "^4.1.10"
     },
     "repository": {
         "type": "git",
         "url": "git+ssh://git@github.com/piecioshka/find-emails-in-string-cli.git"
     },
     "engines": {
-        "node": ">=12"
+        "node": ">=20"
     },
     "files": [
         "bin",

@@ -15,7 +15,8 @@
         "prebuild": "rm -rf dist/ types/",
         "build": "tsc",
         "test": "vitest run",
-        "coverage": "vitest run --coverage"
+        "coverage": "vitest run --coverage",
+        "prepublishOnly": "npm run build"
     },
     "dependencies": {
         "find-emails-in-string": "^1.0.1"

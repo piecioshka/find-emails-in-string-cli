@@ -1,5 +1,7 @@
 # find-emails-in-string-cli
 
+![typescript](https://img.shields.io/badge/built%20with-TypeScript-3178c6.svg)
+
 [![cli-available](https://badgen.net/static/cli/available/?icon=terminal)](#cli)
 [![node version](https://img.shields.io/node/v/find-emails-in-string-cli.svg)](https://www.npmjs.com/package/find-emails-in-string-cli)
 [![npm version](https://badge.fury.io/js/find-emails-in-string-cli.svg)](https://badge.fury.io/js/find-emails-in-string-cli)

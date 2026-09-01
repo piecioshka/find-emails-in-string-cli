@@ -6,7 +6,7 @@
 [![downloads count](https://img.shields.io/npm/dt/find-emails-in-string-cli.svg)](https://www.npmjs.com/package/find-emails-in-string-cli)
 [![size](https://packagephobia.com/badge?p=find-emails-in-string-cli)](https://packagephobia.com/result?p=find-emails-in-string-cli)
 [![license](https://img.shields.io/npm/l/find-emails-in-string-cli.svg)](https://piecioshka.mit-license.org)
-[![github-ci](https://github.com/piecioshka/find-emails-in-string-cli/actions/workflows/testing.yml/badge.svg)](https://github.com/piecioshka/find-emails-in-string-cli/actions/workflows/testing.yml)
+[![github-ci](https://github.com/piecioshka/find-emails-in-string-cli/actions/workflows/ci.yml/badge.svg)](https://github.com/piecioshka/find-emails-in-string-cli/actions/workflows/ci.yml)
 [![typescript](https://img.shields.io/badge/built%20with-TypeScript-3178c6.svg)](https://www.typescriptlang.org/)
 
 🔨 CLI to find emails in plain text file
